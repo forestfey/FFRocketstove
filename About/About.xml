@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>[A16] Rocketstove CS add-on</name>
+  <name>FFRocketstove</name>
   <author>forestfey</author>
-  <targetVersion>0.16.1393</targetVersion>
+  <targetVersion>1.0.0</targetVersion>
   <description> Adds an additional heat- and mealsource that doesn't use electricity and only little wood as fuel. The origin of this technology is unclear, as the superior draft-principle might have been invented or (re-)discovered by several people or cultures at different times and places in human history. Due to the elaborate proportions that are needed inside a rocketstove, more than only basic metal- and stoneworking knowledge is required to build it. Well, actually not at all, you might only need some crafty aptitude and common sense. But... balancing reasons!
    
    </description>

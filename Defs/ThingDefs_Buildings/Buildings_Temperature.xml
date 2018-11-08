@@ -1,14 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rocketstove</defName>
-    <label>Rocketstove</label>
+    <label>rocketstove</label>
     <thingClass>Building_WorkTable</thingClass>
     <description>Cooks meals quickly and releases the produced heat through the thermal mass of stone. Uses little wood as a fuel. As with all heat sources, it must be placed indoors so it has a closed space to heat.</description>    
     <category>Building</category>
     <graphicData>
-      <texPath>Things/Building/Misc/TempControl/Rocketstove</texPath> <!-- need makeymakey -->
+      <texPath>Things/Building/Misc/TempControl/Rocketstove</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawRotated>false</drawRotated>
       <allowFlip>false</allowFlip>
@@ -17,16 +17,19 @@
         <rect>(0.2,0,0.6,0.1)</rect>
       </damageData>
     </graphicData>
+	<minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
-	<minifiedDef>MinifiedFurniture</minifiedDef>
     <tickerType>Normal</tickerType>
     <drawerType>RealtimeOnly</drawerType>
     <fillPercent>0.25</fillPercent>
+	<thingCategories>
+      <li>BuildingsTemperature</li>
+    </thingCategories>
     <statBases>
-	  <Mass>2.5</Mass>
-      <MaxHitPoints>120</MaxHitPoints>
+	  <Mass>7.5</Mass>
+      <MaxHitPoints>150</MaxHitPoints>
       <WorkToBuild>500</WorkToBuild>
       <Flammability>0</Flammability>
     </statBases>
@@ -38,7 +41,7 @@
       <li>Stony</li>
     </stuffCategories>
     <costStuffCount>10</costStuffCount>
-    <soundImpactDefault>BulletImpactGround</soundImpactDefault>
+    <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
     <placeWorkers>
@@ -58,27 +61,30 @@
         <destroyOnNoFuel>false</destroyOnNoFuel>
       </li>
       <li Class="CompProperties_Glower">
-        <glowRadius>3</glowRadius>
+        <glowRadius>5</glowRadius>
         <glowColor>(252,187,113,0)</glowColor>
       </li>
       <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
         <heatPerSecond>21</heatPerSecond>
-		<compClass>Nandonalt_CampingStuff.CompHeatPusherRefuelable</compClass>
-        <heatPushMaxTemperature>25</heatPushMaxTemperature>
-     <li>
-        <compClass>CompGatherSpot</compClass>
+        <heatPushMaxTemperature>28</heatPushMaxTemperature>
       </li>
+	  <li>
+        <compClass>CompGatherSpot</compClass>
+     </li>
     </comps>
     <designationCategory>Temperature</designationCategory>
     <designationHotKey>Misc1</designationHotKey>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,0)</interactionCellOffset>
     <recipes>
-      <li>CookMealSimple_Rocketstove</li>
+    <li>CookMealSimple_Rocketstove</li>
 	<li>CookMealSimple_Bulk_Rocketstove</li>
-	<li>CookMealFine_Rocketstove</li>     
+	<li>CookMealFine_Rocketstove</li>  
+	<li>CookMealFine_Bulk_Rocketstove</li>
 	<li>MakePemmican_Rocketstove</li>
 	<li>MakeKibble_Rocketstove</li>
+	<li>BurnDrugs_Rocketstove</li>
     </recipes>
     <inspectorTabs>
       <li>ITab_Bills</li>
