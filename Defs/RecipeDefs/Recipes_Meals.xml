@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 	<RecipeDef ParentName="CookMealBase">
@@ -139,7 +139,7 @@
 	</RecipeDef>
   
  
-<RecipeDef ParentName="MakePemmican">
+<RecipeDef>
     <defName>MakePemmican_Rocketstove</defName>
     <label>make pemmican</label>
     <description>Make pemmican, a preserved combination of meat and plant food. It doesn't taste amazing, but lasts a long time without refrigeration.</description>
