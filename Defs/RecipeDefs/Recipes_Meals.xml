@@ -260,7 +260,7 @@
 		<description>Burn unwanted drugs to completely destroy them.</description>
 		<jobString>Burning drugs.</jobString>
 		<workAmount>60</workAmount>
-    <workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<requiredGiverWorkType>Hauling</requiredGiverWorkType>
 		<effectWorking>BurnDrug</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
